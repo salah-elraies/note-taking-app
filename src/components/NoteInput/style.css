@@ -1,0 +1,40 @@
+.note_input_container {
+  padding: 8px;
+  background: var(--card-bg-color);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.note_input_container textarea {
+  resize: none;
+  height: 150px;
+  color: #fff;
+  padding: 8px;
+  background: var(--card-hover);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+.note_input_container textarea::placeholder {
+  color: #ccc;
+}
+.note_input_container button {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  background: var(--btn-bg-color);
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.note_input_container button:disabled {
+  cursor: not-allowed;
+  color: #999;
+}
